@@ -1,13 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBattle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Src/lcon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Manrope&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="Src/lcon.jpg" alt="Logo" class="logo-img">
+                <h1 class="logo">ByteBattle</h1>
+            </div>
+            <!-- Navigation Links -->
+            <div class="nav-links-left">
+                <div class="dropdownnav">
+                    <button class="dropbtnnav">Tools</button>
+                    <div class="dropdownnav-content">
+                        <a href="#">Tool 1</a>
+                        <a href="#">Tool 2</a>
+                        <a href="#">Tool 3</a>
+                        <a href="#">Tool 4</a>
+                    </div>
+                </div>
+                <div class="dropdownnav">
+                    <button class="dropbtnnav">APIs</button>
+                    <div class="dropdownnav-content">
+                        <a href="#">API 1</a>
+                        <a href="#">API 2</a>
+                        <a href="#">API 3</a>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- Authentication Links -->
+            <div class="auth-links">
+                <a href="#" class="auth">Login</a>
+                <a href="#" class="auth">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="main-section">
+                <div class="content-box">
+                    <h1>ByteBattle</h1>
+                    <p>Transform your files effortlessly with CloudConvert, your versatile online conversion hub. Whether you need to work with audio tracks, video clips, office documents, digital books, compressed files, pictures, spreadsheets, or slideshows - we've got you covered. Simply click below to browse your computer and begin converting your files into your desired format.</p>
+                </div>
+                <div class="convert-box">
+                    <span>Convert</span>
+                    <select id="format-from" class="main-dropdown">
+                        <option value="">Select Format</option>
+                        <option value="document">Document</option>
+                        <option value="image">Image</option>
+
+                    </select>
+                    <span>To</span>
+                    <select id="format-to" class="main-dropdown">
+                        <option value="">Select Format</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
+  
