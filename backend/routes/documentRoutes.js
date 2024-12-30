@@ -25,7 +25,7 @@ router.post(
       return res.status(400).json({ error: "Format is required." });
     }
 
-    req.format = format;
+    req.format= format;
     next();
   },
   async (req, res) => {
@@ -55,7 +55,9 @@ router.post(
               .json({ error: "Conversion failed", details: convertErr.message });
 
           fs.writeFileSync(outputPath, done);
+          
           res.download(outputPath, () => {
+            console.log(`✅ File converted successfully: ${outputPath}`);
             fs.unlinkSync(inputPath);
             // Comment out the line below if you want to keep the output file
             // fs.unlinkSync(outputPath);

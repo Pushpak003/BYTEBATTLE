@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="Src/lcon.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Manrope&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="navbar-container">
@@ -36,7 +39,7 @@
                         <a href="#">API 3</a>
                     </div>
                 </div>
-               
+
             </div>
             <!-- Authentication Links -->
             <div class="auth-links">
@@ -50,25 +53,30 @@
             <div class="main-section">
                 <div class="content-box">
                     <h1>ByteBattle</h1>
-                    <p>Transform your files effortlessly with CloudConvert, your versatile online conversion hub. Whether you need to work with audio tracks, video clips, office documents, digital books, compressed files, pictures, spreadsheets, or slideshows - we've got you covered. Simply click below to browse your computer and begin converting your files into your desired format.</p>
+                    <p>Transform your files effortlessly with CloudConvert, your versatile online conversion hub.
+                        Whether you need to work with audio tracks, video clips, office documents, digital books,
+                        compressed files, pictures, spreadsheets, or slideshows - we've got you covered. Simply click
+                        below to browse your computer and begin converting your files into your desired format.</p>
                 </div>
                 <div class="convert-box">
                     <span>Convert</span>
-                    <select id="format-from" class="main-dropdown">
-                        <option value="">Select Format</option>
-                        <option value="document">Document</option>
-                        <option value="image">Image</option>
-
-                    </select>
-                    <span>To</span>
-                    <select id="format-to" class="main-dropdown">
-                        <option value="">Select Format</option>
-                    </select>
+                    <form id="file-form">
+                        <label for="file-input">Upload File:</label>
+                        <input type="file" id="file-input" accept=".pdf,.doc,.docx,.mp3" />
+                        <select id="conversion-options" disabled>
+                            <option value="">Select conversion type</option>
+                        </select>
+                        <button type="submit" disabled>Convert</button>
+                    </form>
+                    
+                    
                 </div>
+                <div id="download-container"></div>
+
             </div>
         </section>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
-  
